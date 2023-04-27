@@ -1,0 +1,279 @@
+/*© 2023 Ferre-Vente C.A. -Todos los Derechos Reservados*/
+/*Desarrollador José M. Ramirez O. +58-426-444-7052*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, .titulo, .logotipo { cursor: default; }
+body { background: #1f1f1f; }
+
+body::-webkit-scrollbar
+{
+    width: 7px;
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background: rgba(255, 255, 255, .2);
+    border-radius: 20px;
+}
+
+.pagina{ width: 100%; }
+
+header
+{
+    height: 90px;
+    background: #ffcc00;
+    padding: 30px 0;
+}
+
+header .contenedor
+{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logotipo
+{
+    margin: 0 40px;
+    font-family: Tin Doghouse;
+    color: #000000;
+    font-size: 40px;
+}
+
+.contenido
+{
+    font-family: url(../fonts/icomoon.ttf);
+    font-size: 30px;
+    margin: 40px 120px 0 120px;
+    color: #fff;
+}
+
+.titulo { font-size: 50px; }
+
+.navbar
+{
+    position: fixed;
+    left: 0;
+    top: 90px;
+    z-index: 2000;
+}
+
+.navbar ul { list-style: none; }
+
+.navbar ul li a
+{
+    font-size: 30px;
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.navbar ul li a:hover
+{
+    font-size: 50px;
+    padding: 10px 30px;
+    background: #ffcc00;
+    color: #000;
+}
+
+.social
+{
+    position: fixed;
+    right: 0;
+    top: 90px;
+    z-index: 2000;
+}
+
+.social ul { list-style: none; }
+
+.social ul li a
+{
+    font-size: 30px;
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.social ul li .icon-instagram1:hover{background:#c039a5;}
+.social ul li .icon-whatsapp1:hover{background:#5ef26a;}
+.social ul li .icon-google-plus1:hover{background:#ff0000;}
+.social ul li .icon-location:hover{background:#ff0000;}
+
+.social ul li a:hover
+{
+    font-size: 50px;
+    padding: 10px 30px;
+}
+
+.categoria
+{
+    border-radius: 40px;
+    font-size: 40px;
+    border: transparent;
+    margin: 40px;
+    width: 410px;
+    height: 200px;
+    color: #fff;
+    transition: 2s all ease;
+}
+
+.a {background: url(../img/construccion.jpg);}
+.b {background: url(../img/electricidad.jpg);}
+.c {background: url(../img/iluminacion.jpg);}
+.d {background: url(../img/plomeria.jpg);}
+.e {background: url(../img/.jpg);}
+.f {background: url(../img/.jpg);}
+
+.boton
+{
+    border-radius: 100px;
+    padding: 20px;
+    background: #1f1f1f;
+    transition: .5s all ease;
+    font-size: 30px;
+}
+
+.link
+{
+    background: transparent;
+    text-decoration: none;
+    color: #fff;
+}
+
+.categoria .boton:hover
+{
+    cursor: pointer;
+    background: #ffcc00;
+    color: #000;
+    font-size: 35px;
+    padding: 25px;
+}
+
+.galeria-port
+{
+    cursor: default;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imagen-port
+{
+    width: 23%;
+    margin-bottom: 10px;
+    height: 250px;
+    position: relative;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 1);
+}
+
+.imagen-port > img
+{
+    cursor: default;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria
+{
+    cursor: default;
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(0, 0, 0, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img { width: 50px; }
+
+.hover-galeria p
+{
+    color: #ffffff;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.imagen-port:hover .hover-galeria { transform: scale(1); }
+
+.formulario
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 120px 50px 120px;
+}
+
+.titulo_form
+{
+    font-size: 30px;
+    color: #fff;
+    margin: 15px 0;
+}
+
+.input_form
+{
+    height: 50px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.direc { height: 100px; }
+
+.pedidos
+{
+    background-color: #fff;
+    color: #1f1f1f;
+    height: 200px;
+}
+
+.btns_prod
+{
+    display: flex;
+}
+
+.btn_prod
+{
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #1f1f1f;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 100px;
+    border-width: 0px;
+    transition: 0.5s all ease;
+}
+
+.btn_prod:hover
+{
+    background-color: #ffcc00;
+    color: #000;
+    transition: 0.5s all ease;
+}
