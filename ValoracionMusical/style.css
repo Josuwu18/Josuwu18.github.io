@@ -44,12 +44,12 @@ html {
 
 @font-face {
     font-family: Roboto-Regular;
-    src: url(/resources/Fonts/Roboto-Regular.ttf);
+    src: url(resources/Fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family: Roboto-Bold;
-    src: url(/resources/Fonts/Roboto-Bold.ttf);
+    src: url(resources/Fonts/Roboto-Bold.ttf);
 }
 
 @font-face {
@@ -59,17 +59,17 @@ html {
 
 @font-face {
     font-family: Alegreya-Regular;
-    src: url(/resources/Fonts/Alegreya-Regular.ttf);
+    src: url(resources/Fonts/Alegreya-Regular.ttf);
 }
 
 @font-face {
     font-family: Alegreya-Bold;
-    src: url(/resources/Fonts/Alegreya-Bold.ttf);
+    src: url(resources/Fonts/Alegreya-Bold.ttf);
 }
 
 @font-face {
     font-family: Alegreya-Black;
-    src: url(/resources/Fonts/Alegreya-Black.ttf);
+    src: url(resources/Fonts/Alegreya-Black.ttf);
 }
 
 /* -------------------- Navegador -------------------- */
@@ -119,7 +119,7 @@ header nav button {
 /* -------------------- Jumbotron -------------------- */
 
 .jumbotron {
-    background-image: url(/resources/JPG/01.jpg);
+    background-image: url(resources/JPG/01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -203,7 +203,7 @@ header nav button {
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    background-image: url(/resources/JPG/02.jpg);
+    background-image: url(resources/JPG/02.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px 0;
