@@ -144,14 +144,29 @@ body {
 /* --- RESPONSIVE (Móvil) --- */
 @media (max-width: 768px) {
     .hero-grid, .bento-grid, .projects-archive, .contact-grid {
-		display: block;
         grid-template-columns: 1fr;
     }
+	
+	.exception {
+		display: flex;
+		flex-direction: column;
+	}
     
     .hero-grid h1 { font-size: 2.5rem; }
     .hero-grid p { font-size: 1.1rem; }
     
-    .nav-pill { width: 100%; justify-content: space-around; }
+    .nav-pill {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+	
+    .nav-pill a {
+		display: flex;
+		justify-content: center;
+	}
+	
+    .navbar {position: static;}
 }
 
 a {
@@ -196,4 +211,8 @@ a {
  .skills-cell {
     line-height: 1.6;
 	text-align: left;
+}
+
+.exception {
+	grid-template-columns: 1fr 1.6fr;
 }
