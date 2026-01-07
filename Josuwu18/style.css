@@ -159,6 +159,8 @@ body {
 		display: flex;
 		width: 100%;
 		flex-direction: column;
+		padding: 10px;
+		border-radius: 20px;
 	}
 	
     .nav-pill a {
@@ -216,3 +218,4 @@ a {
 .exception {
 	grid-template-columns: 1fr 1.6fr;
 }
+
